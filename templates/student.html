@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>student details</title>
+  <link rel="stylesheet" href="css/student.css">
+<!-- <script language="javascript">
+  function validate(form)
+  {
+
+
+
+  }
+  </script> -->
+</head>
+
+<body>
+  <h1 name='summa'></h1>
+  <form action="record" method='post'>
+    {% csrf_token %}
+   <div class=container>
+    <label for="studentid">Student Id</label><br>
+    <input type="number" name="id" id="Studentid" required >
+    <br>
+    <label for="name">Student Name</label><br>
+    <input type="text" name="studentname" id="name" required >
+    <br>
+    <div id="radio">
+    <p>Gender:</p>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label><br>
+    </div>
+    <label for="birthday">Date Of Birth:</label><br>
+    <input type="date" id="birthday" name="dob">
+    <br>
+    <label for="city">City</label><br>
+    <input type="text" name="city" id="city" required >
+    <br>
+    <label for="state">State</label><br>
+    <input type="text" name="state" id="state" required >
+    <br>
+    <label for="emailid">Email Id</label><br>
+    <input type="email" name="mail" id="emailid" required >
+    <br>
+    <label for="qualification">Qualification</label><br>
+    <input type="text" name="qualification" id="qualification" required >
+    <br>
+    <label for="stream">Stream </label><br>
+    <input type="text" name="stream" id="stream" required >
+    <br>
+    <input type="submit">
+   </div>
+  </form>
+  </body>
+</html>

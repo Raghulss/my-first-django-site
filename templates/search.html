@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>student details</title>
+
+
+</head>
+<body>
+  <form action="find" method="post">
+    {% csrf_token %}
+
+   <div class=search>
+    <label for="studentid">Student Id</label><br>
+    <input type="number" name="id" id="Studentid" required >
+    <br>
+    <input type="submit">
+   </div>
+  </form>
+  </body>
+</html>

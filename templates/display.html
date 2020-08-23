@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>student details</title>
+
+
+</head>
+<body>
+  <table>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>DOB</th>
+      <th>City</th>
+      <th>State</th>
+      <th>EmailId</th>
+      <th>Qualification</th>
+      <th>Stream</th>
+    </tr>
+    {% for row in rows %}
+    <tr>
+      <td>{{row.id}}</td>
+      <td>{{row.name}}</td>
+      <td>{{row.gen}}</td>
+      <td>{{row.dob}}</td>
+      <td>{{row.cit}}</td>
+      <td>{{row.sta}}</td>
+      <td>{{row.mai}}</td>
+      <td>{{row.qua}}</td>
+      <td>{{row.stream}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+
+  <a href='home'>Home</a>
+</body>
+</html>
